@@ -1,0 +1,138 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">  
+  
+<head>
+  
+  <title>web</title>
+  
+  <style>
+    div.menu{
+      overflow: hidden;
+    }
+    body{
+      margin: 0;
+      background-color: rgb(20, 18, 20); 
+    }
+    div.item{
+      float: left;
+      margin: 20px;
+      padding: 20px;
+      color: rgb(112, 112, 112);
+      font-size: 20px;
+    }
+    div.logo{
+      float: left;
+      margin: 20px 290px 20px 180px;
+      padding: 20px;
+      color: rgb(205, 201, 231);
+      font-size: 25px;
+      
+    }
+
+    div.login{
+      float: left;
+      margin: 30px 20px 20px 280px;
+      padding: 15px;
+    }
+   
+    button{
+      width:110px;
+      background-color:rgb(20, 18, 20);
+      color: rgb(255, 255, 255);
+      padding: 5px 0;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px;
+      cursor: pointer;
+      border-style: solid; 
+      border-width: 3px;/*상하좌우*/
+      border: rgb(255, 255, 255);
+      border: 3px solid;
+    }
+    .line{
+      margin: 0 auto;
+      background: rgb(112, 112, 112); 
+      height:1px;
+      margin-top:90px;
+      width: 80%;
+    }
+    
+    h1{
+      color: rgb(255, 255, 255);
+      font-size:50px;
+      font-family:Segoe UI;
+      text-decoration : underline;
+    }
+    .parent{
+    width: 80%;
+    margin: 10px auto;
+    }
+    .first {
+    border: 1px solid;
+    background-color:  rgb(185, 236, 249);
+    float: left;
+    width:30%;
+    box-sizing: border-box;
+    height: 400px;
+    display : block ;
+    text-align : center ;
+    }
+    .second{
+    border: 1px solid;
+    background-color:  rgb(233, 214, 210);
+    float: left;
+    margin-left: 5%;
+    width:30%;
+    box-sizing: border-box;
+    height: 400px;
+    display : block ;
+    text-align : center ;
+    }
+    .third{
+    border: 1px solid;
+    background-color:  rgb(112, 112, 112);
+    float: right;
+    width:30%;
+    box-sizing: border-box;
+    height: 400px;
+    display : block ;
+    text-align : center ;
+    }
+    img{
+      display : inline;
+      max-height:398px;
+    }
+  </style>
+
+</head>
+  <body>
+    <br>
+    <div class="menu" >
+      <div class="logo">Logo</div>
+      <div class="item">button1</div>
+      <div class="item">button2</div>
+      <div class="item">button3</div>
+      <div class="item">button4</div>
+      <div class="item">button5</div>
+      <div class="login"><button>SIGN IN</button></div>
+      <br>
+      <div class="line"></div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="parent">
+      <h1 >VISUAL DESIGN</h1>
+      <br>
+      <div class="first"><img src ="{%static 'img.jpg' %}"></div>
+      <div class="second"><img src="{%static 'img1.png' %}"></div>
+      <div class="third"><img src="{%static 'img2.png' %}"></div>
+      <div style='background: rgb(112, 112, 112); height:1px;margin-top:500px;'></div>
+    </div>
+  </div>
+  </body>
+</html>
